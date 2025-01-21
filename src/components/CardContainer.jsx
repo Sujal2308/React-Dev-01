@@ -1,31 +1,56 @@
 import Cards from "./Cards"
-let data = [
-    {
-        name: "John",
-        age: 25
-    },
-    {
-        name: "Jane",
-        age: 24
-    },
-    {
-        name: "Jack",
-        age: 30
-    }
-]
 const CardContainer = () => {
+  // this is the parent component
   return (
-    <div style={{display: "flex", justifyContent: "space-around", backgroundColor: "lightgray"}}>
-        {data.map((data)=>{
-            return(
-                <div key={data.name}>
-                <Cards name = {data.name} age = {data.age}/>
-                </div>
-            )
-        })}
+    <div>
+        <center><h1>Card Container</h1></center>
+      <div style={{display:"flex",justifyContent:"space-around" , backgroundColor:"lightblue",flexWrap:"wrap", gap:"30px"}}>
+  
+    <Cards
+    image = "https://www.w3schools.com/howto/img_avatar.png" // attribute
+    title = "Sujal"
+    age = {21}/>
+    <Cards
+    image = "https://www.w3schools.com/howto/img_avatar.png"
+    title = "Karan"
+    age = {30}
+    />
+   <Cards
+    image = "https://www.w3schools.com/howto/img_avatar.png"
+    title = "Amar"
+    age = {22}
+    />
+    <Cards
+    image = "https://www.w3schools.com/howto/img_avatar.png"
+    title = "Amar"
+    age = {22}
+    />
+     <Cards
+    image = "https://www.w3schools.com/howto/img_avatar.png"
+    title = "Amar"
+    age = {22}
+    />
+     <Cards
+    image = "https://www.w3schools.com/howto/img_avatar.png"
+    title = "Amar"
+    age = {22}
+    />
+     <Cards
+    image = "https://www.w3schools.com/howto/img_avatar.png"
+    title = "CHINMAY"
+    age = {100}
+    />
+       <Cards
+    image = "https://www.w3schools.com/howto/img_avatar.png"
+    title = "AMAN"
+    age = {10}
+    />
+   </div>
+
     </div>
+   
     
-  )
+  ) 
 }
 
 export default CardContainer
