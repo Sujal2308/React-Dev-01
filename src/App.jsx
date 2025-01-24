@@ -7,17 +7,19 @@ import Greeting from './components/Greeting';
 import ProductInfo from './components/ProductInfo';
 import UserList from './components/UserList';
 import CardContainer from './components/CardContainer';
+import ConditionalRender from "./components/ConditionalRender";
 const App  = () =>{
   return (
     <>
     <Header/>
-    <MainContent/>
+    {/* <MainContent/>
     <WelcomeMessage/>
     <JSXRules/>
     <Greeting/>
     <ProductInfo/>
-    <UserList/>
+    <UserList/> */}
     <CardContainer/>
+    <ConditionalRender cart= {[ "Socks" ,"Bag","Mobile", "pen" , 'Books']}/>
     <Footer/>
     </>
   )
