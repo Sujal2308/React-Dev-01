@@ -11,16 +11,16 @@ import ConditionalRender from "./components/ConditionalRender";
 const App  = () =>{
   return (
     <>
-    <Header/>
-    {/* <MainContent/>
-    <WelcomeMessage/>
+    {/* <Header/> */}
+     <MainContent/>
+    {/*<WelcomeMessage/>
     <JSXRules/>
     <Greeting/>
     <ProductInfo/>
     <UserList/> */}
-    <CardContainer/>
+    {/* <CardContainer/>
     <ConditionalRender cart= {[ "Socks" ,"Bag","Mobile", "pen" , 'Books']}/>
-    <Footer/>
+    <Footer/> */}
     </>
   )
 }

@@ -1,11 +1,10 @@
 
 const MainContent = () => {
   return (
-    <main>
-        {/* <h2>Main Content</h2> */} // comment in jsx
-        <p>This is the main content area. You can add your components here.</p>
+    <main style={{color: "blue", display: "flex", justifyContent: "center", alignItems: "center", height: "100vh",}}>
+      <h1 style={{border : "6px solid red" , backgroundColor : "black" }}>This is the main content area.<br/>You can add your components here.</h1>
     </main>
-  )                                                                                                     
+  )  
 }
 
 export default MainContent
