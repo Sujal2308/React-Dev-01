@@ -14,10 +14,10 @@ const App  = () =>{
     <>
     {/* <Header/> */}
      {/* <MainContent/> */}
-     <EventHandle/>
+     {/* <EventHandle/> */}
+     <Greeting/>
     {/*<WelcomeMessage/>
     <JSXRules/>
-    <Greeting/>
     <ProductInfo/>
     <UserList/> */}
     {/* <CardContainer/>
