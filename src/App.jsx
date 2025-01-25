@@ -8,11 +8,13 @@ import ProductInfo from './components/ProductInfo';
 import UserList from './components/UserList';
 import CardContainer from './components/CardContainer';
 import ConditionalRender from "./components/ConditionalRender";
+import EventHandle from './components/EventHandle';
 const App  = () =>{
   return (
     <>
     {/* <Header/> */}
-     <MainContent/>
+     {/* <MainContent/> */}
+     <EventHandle/>
     {/*<WelcomeMessage/>
     <JSXRules/>
     <Greeting/>
