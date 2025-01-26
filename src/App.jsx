@@ -12,10 +12,10 @@ import EventHandle from './components/EventHandle';
 const App  = () =>{
   return (
     <>
-    {/* <Header/> */}
+    <Header/>
      {/* <MainContent/> */}
      {/* <EventHandle/> */}
-     <Greeting/>
+     {/* <Greeting/> */}
     {/*<WelcomeMessage/>
     <JSXRules/>
     <ProductInfo/>
