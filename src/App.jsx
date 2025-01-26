@@ -13,7 +13,7 @@ import RandomNumberGenerator from './components/RandomNumberGenerator';
 const App  = () =>{
   return (
     <>
-    <RandomNumberGenerator/>
+    {/* <RandomNumberGenerator/> */}
     {/* <Header/> */}
      {/* <MainContent/> */}
      {/* <EventHandle/> */}
@@ -24,7 +24,8 @@ const App  = () =>{
     <UserList/> */}
     {/* <CardContainer/>
     <ConditionalRender cart= {[ "Socks" ,"Bag","Mobile", "pen" , 'Books']}/>
-    <Footer/> */}
+   */}
+     <Footer/>
     </>
   )
 }
