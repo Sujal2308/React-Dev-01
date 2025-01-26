@@ -9,10 +9,12 @@ import UserList from './components/UserList';
 import CardContainer from './components/CardContainer';
 import ConditionalRender from "./components/ConditionalRender";
 import EventHandle from './components/EventHandle';
+import RandomNumberGenerator from './components/RandomNumberGenerator';
 const App  = () =>{
   return (
     <>
-    <Header/>
+    <RandomNumberGenerator/>
+    {/* <Header/> */}
      {/* <MainContent/> */}
      {/* <EventHandle/> */}
      {/* <Greeting/> */}
