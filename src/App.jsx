@@ -10,6 +10,7 @@ import CardContainer from './components/CardContainer';
 import ConditionalRender from "./components/ConditionalRender";
 import EventHandle from './components/EventHandle';
 import RandomNumberGenerator from './components/RandomNumberGenerator';
+import Toggle from './components/Toggle';
 const App  = () =>{
   return (
     <>
@@ -26,7 +27,8 @@ const App  = () =>{
     {/* <CardContainer/>
     <ConditionalRender cart= {[ "Socks" ,"Bag","Mobile", "pen" , 'Books']}/>
    */}
-     <Footer/>
+   <Toggle/>
+     {/* <Footer/> */}
     </>
   )
 }
