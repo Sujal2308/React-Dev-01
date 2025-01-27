@@ -11,15 +11,17 @@ import ConditionalRender from "./components/ConditionalRender";
 import EventHandle from './components/EventHandle';
 import RandomNumberGenerator from './components/RandomNumberGenerator';
 import Toggle from './components/Toggle';
+import SideEffects from './components/SideEffects';
 const App  = () =>{
   return (
     <>
+    {/* <SideEffects/> */}
     {/* <RandomNumberGenerator/> */}
     {/* <Header/> */}
      {/* <MainContent/> */}
      {/* <EventHandle/> */}
      {/* <Greeting/> */}
-     {/* <WelcomeMessage/> */}
+     <WelcomeMessage/>
     {/*
     <JSXRules/>
     <ProductInfo/>
@@ -27,7 +29,7 @@ const App  = () =>{
     {/* <CardContainer/>
     <ConditionalRender cart= {[ "Socks" ,"Bag","Mobile", "pen" , 'Books']}/>
    */}
-   <Toggle/>
+   {/* <Toggle/> */}
      {/* <Footer/> */}
     </>
   )
