@@ -18,7 +18,7 @@ const App  = () =>{
      {/* <MainContent/> */}
      {/* <EventHandle/> */}
      {/* <Greeting/> */}
-     <WelcomeMessage/>
+     {/* <WelcomeMessage/> */}
     {/*
     <JSXRules/>
     <ProductInfo/>
@@ -26,7 +26,7 @@ const App  = () =>{
     {/* <CardContainer/>
     <ConditionalRender cart= {[ "Socks" ,"Bag","Mobile", "pen" , 'Books']}/>
    */}
-     {/* <Footer/> */}
+     <Footer/>
     </>
   )
 }

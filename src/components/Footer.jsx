@@ -1,14 +1,15 @@
 import { useState } from "react";
-import { FaCopy } from "react-icons/fa";
+import PopupContent from "./PopupContent";
 const Footer = () => {
   let [footerText, setFooterText] = useState("");
   let [headingText, setHeadingText] = useState("");
-  let logo = <FaCopy />;
 
+ 
+  //* function to copy the text
   function copyText(){
     navigator.clipboard.writeText(footerText)
-    .then(()=>setHeadingText("Copied"))
-    setTimeout(()=>setHeadingText(""),2000)
+    .then(()=>setHeadingText("Copied")) //! if the text is copied successfully
+    setTimeout(()=>setHeadingText(""),5000) //! after 2 seconds the text will be removed
   }
   return (
     <footer>
@@ -16,6 +17,7 @@ const Footer = () => {
       <input
         style={{ padding: "25px", fontSize: "23px" }}
         type="text"
+        placeholder="Enter the text"
         value={footerText}
         onChange={(e) => setFooterText(e.target.value)}
       />
@@ -35,7 +37,7 @@ const Footer = () => {
         style={{ padding: "25px", fontSize: "23px" }}
         onClick= {copyText}
       >Copy</button>
-       <h1>{headingText}</h1>
+       <PopupContent message = {headingText}/>
     </footer>
   );
 };
