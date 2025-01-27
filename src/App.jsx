@@ -18,14 +18,15 @@ const App  = () =>{
      {/* <MainContent/> */}
      {/* <EventHandle/> */}
      {/* <Greeting/> */}
-    {/*<WelcomeMessage/>
+     <WelcomeMessage/>
+    {/*
     <JSXRules/>
     <ProductInfo/>
     <UserList/> */}
     {/* <CardContainer/>
     <ConditionalRender cart= {[ "Socks" ,"Bag","Mobile", "pen" , 'Books']}/>
    */}
-     <Footer/>
+     {/* <Footer/> */}
     </>
   )
 }
