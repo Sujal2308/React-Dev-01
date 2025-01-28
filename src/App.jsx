@@ -21,9 +21,9 @@ const App  = () =>{
      {/* <MainContent/> */}
      {/* <EventHandle/> */}
      {/* <Greeting/> */}
-     <WelcomeMessage/>
+     {/* <WelcomeMessage/> */}
+     <JSXRules message="hello world"/>
     {/*
-    <JSXRules/>
     <ProductInfo/>
     <UserList/> */}
     {/* <CardContainer/>
