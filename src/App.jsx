@@ -1,3 +1,4 @@
+import { createContext } from 'react';
 import Header from './components/Header';
 import Footer from "./components/Footer";
 import MainContent from './components/MainContent';
@@ -12,6 +13,10 @@ import EventHandle from './components/EventHandle';
 import RandomNumberGenerator from './components/RandomNumberGenerator';
 import Toggle from './components/Toggle';
 import SideEffects from './components/SideEffects';
+
+//! using contextApi to bypass prop drilling
+export const Data = createContext();
+export const Data2 = createContext();
 const App  = () =>{
   return (
     <>
@@ -22,7 +27,12 @@ const App  = () =>{
      {/* <EventHandle/> */}
      {/* <Greeting/> */}
      {/* <WelcomeMessage/> */}
-     <JSXRules message="hello world"/>
+      <Data.Provider value={"Sujal Bhugul"}>
+        <Data2.Provider value={20}>
+        <JSXRules />
+        </Data2.Provider>
+     </Data.Provider>
+    
     {/*
     <ProductInfo/>
     <UserList/> */}

@@ -11,7 +11,8 @@ const JSXRules = (props) => {
             <li>JSX attributes are written in camelCase</li>
         </p>
         <div className="bg-amber-500 mt-20 mx-10">
-            <JSXRules2 message = {props.message} title="nested comp"/>
+          {/*No need to pass props and holding it unnecessarily */}
+            <JSXRules2 />
             </div>
     </div>
   )
