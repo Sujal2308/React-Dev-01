@@ -13,6 +13,8 @@ import EventHandle from './components/EventHandle';
 import RandomNumberGenerator from './components/RandomNumberGenerator';
 import Toggle from './components/Toggle';
 import SideEffects from './components/SideEffects';
+import Refs from './components/Refs';
+import Test from './components/Test';
 
 //! using contextApi to bypass prop drilling
 export const Data = createContext();
@@ -27,11 +29,11 @@ const App  = () =>{
      {/* <EventHandle/> */}
      {/* <Greeting/> */}
      {/* <WelcomeMessage/> */}
-      <Data.Provider value={"Sujal Bhugul"}>
-        <Data2.Provider value={20}>
+      {/* <Data.Provider value={"Sujal"}>
+        <Data2.Provider value={21}>
         <JSXRules />
         </Data2.Provider>
-     </Data.Provider>
+     </Data.Provider> */}
     
     {/*
     <ProductInfo/>
@@ -41,6 +43,8 @@ const App  = () =>{
    */}
    {/* <Toggle/> */}
      {/* <Footer/> */}
+     {/* <Refs/> */}
+     <Test/>
     </>
   )
 }
