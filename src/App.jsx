@@ -16,6 +16,7 @@ import SideEffects from './components/SideEffects';
 import Refs from './components/Refs';
 import Test from './components/Test';
 import UniqueId from './components/UniqueId';
+import Forms from './components/Forms';
 
 
 //! using contextApi to bypass prop drilling
@@ -47,8 +48,8 @@ const App  = () =>{
      {/* <Footer/> */}
      {/* <Refs/> */}
 
-
-    <UniqueId/>
+    <Forms/>
+    {/* <UniqueId/> */}
      {/* <Test/>  */}
     </>
   )
