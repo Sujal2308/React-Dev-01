@@ -15,6 +15,8 @@ import Toggle from './components/Toggle';
 import SideEffects from './components/SideEffects';
 import Refs from './components/Refs';
 import Test from './components/Test';
+import UniqueId from './components/UniqueId';
+
 
 //! using contextApi to bypass prop drilling
 export const Data = createContext();
@@ -44,7 +46,10 @@ const App  = () =>{
    {/* <Toggle/> */}
      {/* <Footer/> */}
      {/* <Refs/> */}
-     <Test/>
+
+
+    <UniqueId/>
+     {/* <Test/>  */}
     </>
   )
 }
