@@ -1,9 +1,12 @@
 import { data } from "autoprefixer";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { useState, useRef } from "react";
+// import { Value } from "@radix-ui/themes/components/data-list";
 
 const Forms = () => {
   const [formData, setFormData] = useState([]);
+  // const fName = useRef(null);
+
   const {
     register,
     handleSubmit,
@@ -11,7 +14,7 @@ const Forms = () => {
     formState: { errors },
   } = useForm();
 
-   const submitForm = (data) => {
+  const submitForm = (data) => {
     setFormData([...formData, data]);
     console.log(data);
   };
@@ -31,15 +34,38 @@ const Forms = () => {
         <input
           className="px-10 py-4 border-2 bg-amber-400 text-2xl"
           type="text"
-          {...register("lastName")}
+          {...register("lastName", {
+            required: true,
+            minLength: {
+              value: 5,
+              message: "text atleast contain 5 characters",
+            },
+            pattern: {
+              value: /^[A-Za-z]+$/i,
+              message: "text must contain alphabets",
+            },
+          })}
         />
+        {errors.lastName && (
+          <p className="ml-40 mt-5 text-red-500 font-bold">
+            {errors.lastName.message}
+          </p>
+        )}
         <br /> <br />
         <label className="text-2xl font-mono"> Phone No: </label>
         <input
           className="px-10 py-4 border-2 bg-violet-500 text-2xl"
           type="text"
-          {...register("phoneNo")}
+          {...register("phoneNo", {
+            pattern: { value: /^[0-9]+$/, message: "Enter valid phone Number" },
+            minLength: { value: 10, message: "Enter valid phone Number" },
+          })}
         />
+        {errors.phoneNo && (
+          <p className="ml-40 mt-5 text-red-500 font-bold">
+            {errors.phoneNo.message}
+          </p>
+        )}
         <br />
         <br />
         <input className="border-2 px-5 py-3 bg-red-600" type="submit" />
