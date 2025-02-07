@@ -5,16 +5,16 @@ import { useState, useRef } from "react";
 
 const Forms = () => {
   const [formData, setFormData] = useState([]);
-  // const fName = useRef(null);
-
   const {
     register,
     handleSubmit,
     watch,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm();
 
-  const submitForm = (data) => {
+  //! preventing multiple submissions
+  const submitForm = async (data) => {
+    await new Promise((response) => setTimeout(response, 5000));
     setFormData([...formData, data]);
     console.log(data);
   };
@@ -68,7 +68,15 @@ const Forms = () => {
         )}
         <br />
         <br />
-        <input className="border-2 px-5 py-3 bg-red-600" type="submit" />
+        <input
+          //! Conditional styling via template literals
+          className={`border-2 px-5 py-3 ${
+            isSubmitting ? "bg-blue-600" : "bg-red-600"
+          }`}
+          disabled={isSubmitting}
+          type="submit"
+          value={isSubmitting ? "Submitting" : "Submit"}
+        />
       </form>
       {formData &&
         formData.map(({ firstName, lastName, phoneNo }, index) => {
